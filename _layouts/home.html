@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+{% assign mytitle = site.title %} {% assign mykeywords = page.keywords %} {% assign mydesc = page.description %}
+{% include head.html %}
+	<link rel="canonical" href="https://salifm.com/" />
+	<script type="application/ld+json">
+	{"@type":"WebSite","headline":"salifm.com","url":"http://salifm.com/","name":"salifm.com","description":"Salif Mehmed | Personal website","@context":"http://schema.org"}</script>
+    
+</head>
+
+<body>
+{% include header.html %}
+{{ content }}
+{% include footer.html %}
+</body>
+</html>

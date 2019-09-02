@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+{% assign mytitle = page.title %} {% assign mykeywords = page.keywords %} {% assign mydesc = page.description %}
+{% include head.html %}
+</head>
+
+<body>
+{% include header.html %}
+{{ content }}
+{% include footer.html %}
+</body>
+</html>
