@@ -3,15 +3,7 @@ email: "salif@programmer.net"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://salifm.com" # the base hostname & protocol for your site, e.g. http://example.com
 markdown: kramdown
-
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+  - run
+  - README.md
+  - LICENSE
