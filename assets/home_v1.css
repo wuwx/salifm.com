@@ -21,10 +21,18 @@
 }
 
 #projects {
+	overflow: hidden;
 	margin-bottom: 50px;
-	width:90%;
+	width:100%;
 	max-width: 900px;
 	margin: auto;
+}
+
+#projectsiframe {
+	overflow: hidden;
+	border: none;
+	width: 100%;
+	height: 100vh;
 }
 
 .mycon {

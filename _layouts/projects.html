@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" style="overflow:hidden;">
+<head>
+	<link rel="stylesheet" href="{{ "/assets/style_v1.css" | relative_url }}" />
+	<link rel="stylesheet" href="{{ "/assets/build.css" | relative_url }}" />
+</head>
+<body scroll="no" style="overflow:hidden;">
+<h2 style="text-align: center; margin-bottom:30px;">My Projects</h2>
+<div class="d-sm-flex flex-wrap gutter-condensed mb-4 mym">
+	{% assign repos = site.github.public_repositories | where:'fork', false | sort: 'stargazers_count', 'last' | reverse %}
+	{% for repository in repos %}
+	<div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mb-3">
+		{% include repo.html %}
+	</div>
+	{% endfor %}
+</div>
+</body>

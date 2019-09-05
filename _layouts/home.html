@@ -3,7 +3,6 @@
 <head>
 {% assign mytitle = site.title %} {% assign mykeywords = page.keywords %} {% assign mydesc = page.description %}
 {% include head.html %}
-	<link rel="stylesheet" href="{{ "/assets/gstyle.css" | relative_url }}" />
 	<link rel="stylesheet" href="{{ "/assets/home_v1.css" | relative_url }}" />
 	<link rel="canonical" href="https://salifm.com/" />
 	<script type="application/ld+json">
@@ -28,15 +27,7 @@
 	<hr class="myhr" />
 
 	<div id="projects">
-		<h2>My Projects</h2>
-		<div class="d-sm-flex flex-wrap gutter-condensed mb-4 mym">
-			{% assign repos = site.github.public_repositories | where:'fork', false | sort: 'stargazers_count', 'last' | reverse %}
-			{% for repository in repos %}
-				<div class="col-sm-6 col-md-12 col-lg-6 col-xl-4 mb-3">
-    				{% include repo.html %}
-    			</div>
-			{% endfor %}
-		</div>
+		<iframe src="projects.html" id="projectsiframe" frameborder="0" onload="this.style.height=this.contentWindow.document.body.scrollHeight + 'px';"></iframe>
 	</div>
 </div>
 {% include footer.html %}
