@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Which languages I use last 30 days
+title: Which languages I used last 30 days
 keywords: salifm, Salif Mehmed, programmer, developer, wakatime
 description: Contact | Salif Mehmed
 ---
