@@ -7,3 +7,5 @@ exclude:
   - run
   - README.md
   - LICENSE
+include:
+  - .well-known
