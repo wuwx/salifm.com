@@ -1,7 +1,13 @@
 .myname {
 	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto;
-	font-size: 2.5rem;
+	font-size: 2.4rem;
 	line-height: 1.25 !important;
+}
+
+@media (max-width: 575px) {
+	.myname {
+		font-size: 2.0rem;
+	}
 }
 
 .mylead {
